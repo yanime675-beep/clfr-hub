@@ -1,0 +1,600 @@
+/* ===== Body Styling ===== */
+body {
+    margin: 0;  
+    font-family: "INTER", "SANS-SERIF";
+}
+
+/* ===== Background Video ===== */
+.bg-video {
+    position: fixed;      
+    top: 0;
+    left: 0;
+    width: 100%;          
+    height: 100%;         
+    object-fit: cover;    
+    z-index: -1;          
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+    position: fixed;          
+    width: 95%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.6);  
+    backdrop-filter: blur(5px);  
+    z-index: 1000;
+}
+
+/* ===== Logo Styling ===== */
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ===== Menu List ===== */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Menu Links ===== */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* ===== Underline Animation ===== */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: yellow;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* ===== Main Heading ===== */
+h1 {
+    font-family: "Roboto", "Sans-serif";
+    color: white;
+    text-align: center;
+    margin-top: 0px;   /* Navbar ke niche adjust */
+    font-size: 40px;
+}
+
+/* ===== Section Spacing (About etc.) ===== */
+section {
+    padding: 100px 20px;
+    color: white;
+}
+
+/* ===== Hero Section Styling ===== */
+.hero {
+    text-align: center;   /* Text center me karega */
+    color: white;         /* Text color white */
+    margin-top: 180px;    /* Navbar ke niche space */
+}
+
+/* ===== Tagline Styling ===== */
+.tagline {
+    font-size: 20px;      /* Text size */
+    margin-top: 10px;     /* Heading ke niche space */
+}
+
+/* ===== Button Styling ===== */
+.btn {
+    display: inline-block;     /* Button jaisa behave kare */
+    margin-top: 20px;
+    padding: 10px 25px;        /* Andar space */
+    background: #00bfff;       /* Button color */
+    color: white;              /* Text color */
+    text-decoration: none;     /* Underline remove */
+    border-radius: 5px;        /* Round corners */
+    transition: 0.3s;          /* Smooth hover effect */
+}
+
+/* ===== Button Hover Effect ===== */
+.btn:hover {
+    background: #009acd;       /* Hover pe color change */
+}
+
+/* ===== Features Section Layout ===== */
+.features {
+    display: flex;             /* Cards side by side */
+    justify-content: center;   /* Center align */
+    gap: 30px;                 /* Cards ke beech space */
+    margin: 100px 50px;        /* Upar aur side space */
+}
+
+/* ===== Card Design ===== */
+.card {
+    background: rgba(255,255,255,0.1); /* Transparent background */
+    backdrop-filter: blur(8px);        /* Glass effect */
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s;                  /* Hover animation smooth */
+}
+
+/* ===== Card Hover Animation ===== */
+.card:hover {
+    transform: translateY(-10px);  /* Upar move hoga */
+}
+
+
+
+/* ===== About Section Main ===== */
+.about {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 40px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+
+    /* Entry Animation */
+    animation: fadeUp 1.5s ease;
+}
+
+/* ===== About Heading ===== */
+.about-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* ===== Description ===== */
+.about-desc {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* ===== Mission & Vision Layout ===== */
+.mission-vision {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* ===== Box Design ===== */
+.box {
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.box:hover {
+    transform: translateY(-10px);
+}
+
+/* ===== Stats Section ===== */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Stats Box */
+.stat-box h3 {
+    font-size: 30px;
+    color: #00ffff;
+}
+
+/* ===== Founder Section ===== */
+.founder {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* ===== Animation Keyframe ===== */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ===== Page Title ===== */
+.page-title {
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+    font-size: 35px;
+}
+
+/* ===== Papers Layout ===== */
+.papers {
+    display: flex;              /* Cards side by side */
+    justify-content: center;
+    gap: 30px;                  /* Space between cards */
+    margin: 60px;
+}
+
+/* ===== Paper Card Design ===== */
+.paper-card {
+    background: rgba(255,255,255,0.1);  /* Glass effect */
+    backdrop-filter: blur(8px);
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+
+    /* Simple Animation */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+}
+
+/* Delay for smooth effect */
+.paper-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.paper-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* ===== Hover Effect ===== */
+.paper-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ===== Download Button ===== */
+.download-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: #00bfff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.download-btn:hover {
+    background: #009acd;
+}
+
+/* ===== Animation Keyframe ===== */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* ===== Notes Section Layout ===== */
+.notes {
+    display: flex;                 /* Cards side by side */
+    justify-content: center;
+    gap: 30px;
+    margin: 60px;
+}
+
+/* ===== Note Card Design ===== */
+.note-card {
+    background: rgba(255,255,255,0.1);   /* Glass effect */
+    backdrop-filter: blur(8px);
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+}
+
+/* Delay animation for smooth effect */
+.note-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.note-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* ===== Hover Effect ===== */
+.note-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ===== Notes Button ===== */
+.note-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: #00bfff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.note-btn:hover {
+    background: #009acd;
+}
+
+
+
+/* ===== Software Section Layout ===== */
+.software {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 60px;
+}
+
+/* ===== Software Card Design ===== */
+.software-card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+}
+
+/* Animation Delay */
+.software-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.software-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* ===== Image Styling ===== */
+.software-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* ===== Hover Effect ===== */
+.software-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ===== Download Button ===== */
+.software-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: #00bfff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.software-btn:hover {
+    background: #009acd;
+}
+
+
+
+
+/* ===== Windows Section Layout ===== */
+.windows {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 60px;
+}
+
+/* ===== Windows Card Design ===== */
+.windows-card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    width: 280px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+}
+
+/* Animation delay */
+.windows-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+/* ===== Image Styling ===== */
+.windows-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* ===== Hover Effect ===== */
+.windows-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ===== Download Button ===== */
+.windows-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #0078d7;  /* Microsoft blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.windows-btn:hover {
+    background: #005a9e;
+}
+
+
+
+/* ===== Useful Section Layout ===== */
+.useful {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 60px;
+}
+
+/* ===== Website Card Design ===== */
+.use-card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+}
+
+/* Animation Delay */
+.use-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.use-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* ===== Image Styling ===== */
+.use-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* ===== Hover Effect ===== */
+.use-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ===== Visit Button ===== */
+.use-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: #00bfff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.use-btn:hover {
+    background: #009acd;
+}
+
+
+/* ===== Free Courses Layout ===== */
+.courses {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 60px;
+}
+
+/* ===== Course Card Design ===== */
+.course-card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+}
+
+/* Animation Delay */
+.course-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.course-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* ===== Image Styling ===== */
+.course-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* ===== Hover Effect ===== */
+.course-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ===== Button Styling ===== */
+.course-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: #28a745;   /* Green learning color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.course-btn:hover {
+    background: #1e7e34;
+}
